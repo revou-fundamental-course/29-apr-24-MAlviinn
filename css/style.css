@@ -3,28 +3,132 @@
 .navigation-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid gray;
-    padding-bottom: 15px;
+    margin: 0 15px;
+    padding: 0 0 7px 0;
 }
 
-.navigation-container>table {
-    border: 1px solid;
-    border-radius: 5px;
+.navigation-container>img {
+    width: 80px;
+    padding: 0 15px;
 }
 
-.navigation-c {
-    padding-left: 25px;
-    padding-top: 5px;
-    padding-right: 25px;
-    padding-bottom: 5px;
+.navigation-container > .menu {
+        display: flex;
 }
 
-.section-container {
+.navigation-container > .menu > button {
+        background-color: white;
+        padding: 8px 16px;
+        border: 1px solid gray;
+        cursor: pointer;
+}
+
+.navigation-container > .menu > button:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.navigation-container > .menu > button:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.header-container {
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+
+.header-container>p {
+    color: gray;
+    padding: 25px 0;
+}
+
+.article-container {
     display: flex;
     justify-content: space-between;
+    margin: 0 25px;
+}
+
+@media only screen and (max-width: 600px) {
+    .article-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+.article-container>div {
+    background-color: aliceblue;
+    margin: 0 10px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.benner-item {
+    background-size: cover;
+    height: 500px;
+}
+
+.article-core {
+    padding: 0 40px;
+}
+
+.article-container>div>header>p {
+    color: gray
 }
 
 .core-item {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     font-weight: bold;
+    padding: 15px 0;
+}
+
+.core-item-form {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding: 15px 0;
+    margin: 0
+}
+
+
+.core-item>input {
+    border: 2px solid #d5dfe7;
+    border-radius: 5px;
+    height: 50px;
+}
+
+.core-form {
+    border: 2px solid #d5dfe7;
+    border-radius: 5px;
+    height: 50px;
+    width: 98%;
+}
+
+.core-button {
+    border: 0;
+    background-color: lightslategray;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+    color: white;
+}
+
+.section-container {
+    margin: 0 0 0 35px;
+}
+
+.section-container>h3 {
+    width: 50%;
+}
+
+.list-section {
+    padding: 0;
+    margin: 0 15px;
+}
+
+.list-section>li {
+    padding: 12px 0;
+    color: gray
 }
